@@ -139,14 +139,14 @@ function renderResults(query, minWords, maxWords, filterWords, topN) {
                     data: query
                 }
             }),
-            function(err, res) {
+            function(err, rawData) {
+              var res = JSON.parse(rawData);
                 /*            var data = JSON.parse(rawData);
                             console.log("got response", data);
                         }
                     );
                    d3.json("/api/query?data="+query + "&minWords=" + minWords + "&maxWords=" + maxWords + "&filter=" + filterWords + "&top=" + topN, function(res){
                   */
-                d = res;
 
                 // New code
                 // Google charts interactive table
