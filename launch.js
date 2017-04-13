@@ -147,7 +147,7 @@ function renderResults(query, minWords, maxWords, filterWords, topN) {
                     );
                    d3.json("/api/query?data="+query + "&minWords=" + minWords + "&maxWords=" + maxWords + "&filter=" + filterWords + "&top=" + topN, function(res){
                   */
-
+                d = res;
                 // New code
                 // Google charts interactive table
                 google.charts.load('current', {
