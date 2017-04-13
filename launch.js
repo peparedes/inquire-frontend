@@ -135,7 +135,7 @@ function renderResults(query, minWords, maxWords, filterWords, topN) {
                     minWords: minWords,
                     maxWords: maxWords,
                     filter: filter,
-                    topN: topN
+                    topN: topN,
                     data: query
                 }
             }),
