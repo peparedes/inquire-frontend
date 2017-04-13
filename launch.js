@@ -127,7 +127,7 @@ function renderResults(query, minWords, maxWords, filterWords, topN) {
     d3.select("#Queries").selectAll("p").remove()
     d3.select("#Queries").selectAll("br").remove()
     d3.select("#Queries").append("p").text("Loading...")
-    d3.request("/api/query")
+    d3.request("/api/query/default")
         .header("Content-Type", "application/json")
         .post(
             JSON.stringify({
