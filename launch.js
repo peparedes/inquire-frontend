@@ -140,7 +140,7 @@ function renderResults(query, minWords, maxWords, filterWords, topN) {
                 }
             }),
             function(err, rawData) {
-              var res = JSON.parse(rawData);
+              var res = JSON.parse(rawData.response);
                 /*            var data = JSON.parse(rawData);
                             console.log("got response", data);
                         }
